@@ -1,0 +1,123 @@
+/* Universal CSS */
+.shorttxt {
+    font-size: 12px;
+}
+
+.vshorttxt {
+    font-size: 10px;
+}
+
+.block {
+    display: block;
+}
+
+/* Body CSS */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+}
+
+/* Container CSS */
+.container {
+    min-width: 340px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.container__form__inpcover {
+    margin: 5px 0;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.75rem;
+    min-height: 40px;
+}
+
+.container__form__inputs {
+    border: 0;
+    height: 100%;
+}
+
+.container__form__inputs:focus {
+    outline: none;
+}
+
+.btn {
+    max-height: 35px;
+    display: block;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+}
+
+.container__link {
+    text-decoration: none;
+    color: #871e87;
+}
+
+.divider {
+    border-top: 1px solid #c7bfbf;
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.floater {
+    border: 1px solid #c7bfbf;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.roundcover {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__iconprnt {
+    display: inline-flex;
+    margin: auto;
+    color: white;
+    margin: 1.5rem 0;
+}
+
+.iconcover {
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+    margin: 0 7px;
+}
+
+/* Media Queries */
+@media (width <= 370px) {
+    .container {
+        min-width: 300px;
+    }
+
+    .container__form {
+        padding: 0 1rem;
+    }
+}

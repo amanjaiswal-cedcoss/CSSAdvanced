@@ -1,0 +1,118 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+}
+
+.container {
+    max-width: 700px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 1rem 2rem 1rem;
+    margin: 2rem 0;
+}
+
+.head  {
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.head__name  {
+    margin: 0;
+}
+
+.head__borbottom  {
+    height: 5px;
+    width: 30px;
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+}
+
+.container__form  {
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inpcover  {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__labels  {
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 0.25rem;
+}
+
+.container__inputs  {
+    border-radius: 3px;
+    border: 1px solid #9b9b9b;
+    padding: 0.75rem 0.5rem;
+    font-size: 14px;
+}
+
+.inpcover--full  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 0.5rem;
+}
+
+.container__labels--bigger  {
+    font-size: 20px;
+}
+
+.inpcover--row  {
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.btn {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border: 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgba(118, 171, 221, 1) 0%, rgba(131, 139, 204, 1) 50%, rgba(149, 101, 185, 1) 100%);
+    margin: 0.75rem 0;
+}
+
+@media (width<660px){
+    .container__form  {
+    grid-template-columns: repeat(2,220px);
+    }
+
+    .inpcover--row  {
+        gap: 0.5rem;
+    }
+}
+
+@media (width<500px){
+    .container__form  {
+    grid-template-columns: repeat(2,160px);
+    }
+}
+
+@media (width<390px){
+    .container__form  {
+    grid-template-columns: 260px;
+    }
+
+    .inpcover--full  {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .inpcover--row  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
